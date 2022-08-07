@@ -20,6 +20,10 @@ export const Buttons = styled.div`
     display:flex;
     flex-direction: row;
     gap: 1rem;
+
+    @media(max-width: 800px) {
+        flex-direction: column;
+    }
 `
 export const Description = styled.div`
     font-weight: 800;
@@ -36,5 +40,9 @@ export const Description = styled.div`
 
     span:hover{
         font-size: 28px;
+    }
+
+    @media(max-width: 800px) {
+        padding: 20px 0px;
     }
 `

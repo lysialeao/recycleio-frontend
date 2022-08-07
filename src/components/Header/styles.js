@@ -12,6 +12,10 @@ export const Container = styled.header`
     background-color: #fff2ee;
     font-family: 'Poppins', sans-serif;
     position: fixed;
+
+    @media(max-width: 800px) {
+        padding: 1px 0px;
+    }
 `
 export const Navigation = styled.div`
     display:flex;
@@ -38,10 +42,15 @@ export const Option = styled.p`
     &:hover{
         background:pink;
     }
+
+    @media(max-width: 800px) {
+        display: none;
+    }
 `
 
 export const Title = styled.p`
     font-weight: 800;
     font-size: 30px;
     color: #078453;
+    cursor: pointer;
 `

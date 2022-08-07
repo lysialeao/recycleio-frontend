@@ -22,4 +22,8 @@ export const Image= styled.img`
     background-image: url(${ props => props.src})
     background-attachment: fixed;
     height: 100$;
+
+    @media(max-width: 800px) {
+        visibility:hidden;
+    }
 `
