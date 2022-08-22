@@ -22,7 +22,6 @@ export const Section = styled.section`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 1px solid green;
     // display: ${(props) => props.collapse === true ? 'flex' : 'none'};
 `
 export const Option = styled.div`

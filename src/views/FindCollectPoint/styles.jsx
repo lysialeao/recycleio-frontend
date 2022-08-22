@@ -6,9 +6,6 @@ export const Container = styled.div`
     width: 100%;
     background-color: #fff2ee;
     font-family: 'Poppins', sans-serif;
-
-   
-    
 `
 
 export const Content = styled.div`
@@ -16,6 +13,7 @@ export const Content = styled.div`
     display: flex;
     height: 100%;
     align-items:center;
+    justify-content:center;
     flex-direction: column;
     padding: 2rem;
 `
@@ -29,4 +27,9 @@ export const Buttons = styled.div`
         flex-direction: column;
     }
 `
-
+export const FormStyled = styled.form`
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    gap: 1rem;
+`

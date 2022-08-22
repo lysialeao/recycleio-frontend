@@ -6,5 +6,10 @@ export const Container = styled.div`
     width: 100%;
     background-color: #fff2ee;
     font-family: 'Poppins', sans-serif;
+    // justify-content: space-around;
 
+`
+
+export const Content = styled.div`
+    padding: 1rem 4rem;
 `

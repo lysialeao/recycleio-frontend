@@ -4,7 +4,7 @@ import Header from '../../components/Header'
 
 import { useNavigate } from 'react-router-dom';
 
-import { Container, Content, Buttons } from './styles'
+import { Container, Content, Buttons, FormStyled } from './styles'
 import { Title } from '../../components/molecules/Title'
 import Button from '../../components/Button/Button'
 import Input from '../../components/Input'
@@ -29,7 +29,7 @@ function FindCollectPoint() {
             <Content> 
                     <Title> Podemos usar sua localização atual? </Title>
                     <Buttons>
-                        <form onSubmit={handleSubmit}>
+                        <FormStyled onSubmit={handleSubmit}>
                             <Input placeholder={'Digite seu CEP'} type='text' value={cep} onChange={(event) => setCep(event.target.value)}/>
                             <Button 
                             type="secondary" 
@@ -38,7 +38,7 @@ function FindCollectPoint() {
                             textColor={'#fff2ee'}
                             //onClick={() => navigate('/coleta/escolha-os-residuos')}
                             />
-                        </form>
+                        </FormStyled>
                     </Buttons>
             </Content>
             <Footer />

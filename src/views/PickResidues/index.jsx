@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 
-import { Container, Content, Section, Option } from './styles'
+import { Container, Content, Section, Option, FormStyled } from './styles'
 
 import Footer from '../../components/Footer'
 import Header from '../../components/Header'
