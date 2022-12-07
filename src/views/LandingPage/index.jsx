@@ -8,16 +8,15 @@ import Header from '../../components/Header'
 
 import { Container } from './styles'
 
-
 function LandingPage() {
     return (
-        <Container> 
-            <Header />
-            <Apresentation />
-            <AboutUs />
-            <AboutPeople />
-            <AboutCompany />
-            <Footer />
+        <Container>
+            <Header id='header'/>
+            <Apresentation data-testid='apresentation'/>
+            <AboutUs id='about-us'/>
+            <AboutPeople id='about-people'/>
+            <AboutCompany id='about-company'/>
+            <Footer id='footer'/>
         </Container>
     )
 }

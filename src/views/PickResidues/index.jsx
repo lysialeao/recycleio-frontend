@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
 
 import { Container, Content, Section, Option, FormStyled } from './styles'
 
@@ -7,7 +6,7 @@ import Footer from '../../components/Footer'
 import Header from '../../components/Header'
 import Button from '../../components/Button/Button'
 
-import { Title } from '../../components/molecules/Title'
+import { Title } from '../../components/Molecules/Title'
 
 
 const options = [
@@ -51,7 +50,6 @@ const options = [
 const PickResidues = () => {
 
     const [ collapse, setCollapse ] = useState(false);
-    const navigate = useNavigate()
 
     return (
         <Container>
@@ -66,7 +64,7 @@ const PickResidues = () => {
                                     <>
                                         <h1>{item.type}</h1> <br/>
                                     <Section collapse={collapse}>
-                                        {
+                                        {/* {
                                             item.options?.map((option) => {
                                                 return (
                                                     <Option>
@@ -76,18 +74,18 @@ const PickResidues = () => {
                                                 )
                                             })
 
-                                        }
+                                        } */}
                                     </Section>
                                     </>
                                 )
                         })
                     }
-                     <Button 
-                        type="secondary" 
+                     <Button
+                        type="secondary"
                         text="Achar pontos!"
                         backgroundColor={'#e63e1b'}
                         textColor={'#fff2ee'}
-                        onClick={() => navigate('/coleta/listagem-pontos')}
+                        // onClick={() => navigate('/coleta/listagem-pontos')}
                         />
                 </form>
             </Content>

@@ -1,8 +1,9 @@
 import React from 'react'
+import { Navigate } from 'react-router-dom'
 import ImageAboutCompany from '../../assets/aboutCompany.svg'
-import { TextLightOrange } from '../molecules/TextLightOrange'
-import { Title } from '../molecules/Title'
-import { Text } from '../molecules/Text'
+import { TextLightOrange } from '../Molecules/TextLightOrange'
+import { Title } from '../Molecules/Title'
+import { Text } from '../Molecules/Text'
 import  Button from '../Button/Button'
 import { Container, Informations, Image } from './styles'
 
